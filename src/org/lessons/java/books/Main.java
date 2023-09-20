@@ -13,8 +13,8 @@ public class Main {
 		final String FILE_PATH = "file.txt";
 		Scanner scanner = new Scanner(System.in);
 
-		int dim = InputInterface.getInt(scanner, 1, "Quanti libri vuoi inserire?");
-		Book[] books = new Book[dim + 1];
+		int dim = InputInterface.getInt(scanner, 1, 100, "Quanti libri vuoi inserire?");
+		Book[] books = new Book[dim];
 		for (int i = 0; i < dim; i++) {
 			String title = InputInterface.getString(scanner, "N°" + (i + 1) + ") Come si chiama il libro?");
 			String author = InputInterface.getString(scanner, "N°" + (i + 1) + ") Come si chiama il suo autore?");
